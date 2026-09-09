@@ -1,3 +1,14 @@
+---
+title: Forge LLD
+emoji: 🛠️
+colorFrom: yellow
+colorTo: gray
+sdk: gradio
+app_port: 7860
+pinned: false
+license: mit
+short_description: LeetCode-style bench for low-level design interviews
+---
 # Forge
 
 A practice bench for **low-level design** interviews — Parking Lot, Vending Machine, Elevator — with diagnostic feedback instead of a hidden unit-test suite.
@@ -36,7 +47,15 @@ If AI is slow or missing: findings still land, banner says `skipped` / `failed`,
 ```bash
 PYTHONPATH=. pytest -q
 ```
+## Live demo (Hugging Face Spaces)
 
+This repo is a **Docker** Space. After you push it, the public app is:
+
+`https://huggingface.co/spaces/<your-hf-username>/forge-lld`
+
+Direct app URL: `https://<your-hf-username>-forge-lld.hf.space`
+
+Optional: Space → **Settings** → **Secrets** → `OPENAI_API_KEY` for LLM critique. Without it, rule-based feedback still works.
 ---
 
 ## Architecture
