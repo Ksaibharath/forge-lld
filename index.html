@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Forge — LLD practice</title>
+  <link rel="stylesheet" href="frontend/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <aside class="rail">
+      <a class="brand" href="#/">
+        <span class="anvil"></span>
+        <span class="brand-text"><strong>Forge</strong><em>LLD bench</em></span>
+      </a>
+      <nav>
+        <a href="#/" data-nav="home">Problems</a>
+        <a href="#/history" data-nav="history">History</a>
+      </nav>
+      <p class="rail-note">Evaluator runs in the browser.</p>
+    </aside>
+    <main id="view"></main>
+  </div>
+  <script src="frontend/engine.js"></script>
+  <script src="frontend/app.js"></script>
+</body>
+</html>
